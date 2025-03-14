@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ece525-37cf-44da-8c77-5df8b976a444" name="Changes" comment="updated the code still under development" />
+    <list default="true" id="d5ece525-37cf-44da-8c77-5df8b976a444" name="Changes" comment="updated the code still under development">
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/css/password_confirm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/css/password_reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/image/recover.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/image/register.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/image/reset.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/email_sent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/invalid_token.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/password_reset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +48,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mwita32"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mwita32/project1.git",
+    "accountId": "973bb5ed-792d-4fe6-967d-ec6951ce3c87"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -98,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741811673567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated the code still under development">
+      <option name="closed" value="true" />
+      <created>1741811840048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741811840048</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
