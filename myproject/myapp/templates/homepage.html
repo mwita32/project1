@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/application.css">
+    <link rel="stylesheet" href="/static/css/family.css">
+    <script defer src="/static/js/script.js"></script>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+        <div class="left-section">
+            <img src="/static/images/mmustlogo.jpg" class="logo">
+            <h2>MASINDE MULIRO UNIVERSITY RATTANSI PORTAL</h2>
+        </div>
+        <div class="right-section">
+            <button class="logout-btn" onclick="window.location.href='{% url 'logout' %}'"> Logout</button>
+        </div>
+    </div>
+
+    <!-- Sidebar (Below the Top Nav) -->
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <ul>
+            <li><a href="{% url 'dashboard' %}"><i class="icon"></i> <span>Dashboard</span></a></li>
+            <li><a href="{% url 'application' %}"><i class="icon"></i> <span>Application</span></a></li>
+            <li><a href="#"><i class="icon"></i> <span>Notifications</span></a></li>
+            <li><a href="#"><i class="icon"></i> <span>Help Desk</span></a></li>
+            <li><a href="#"><i class="icon"></i> <span>Contact Us</span></a></li>
+        </ul>
+    </div>
+
+
+    <div class="main-content">
+
+        <div class="content">
+            {% block content %} {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
