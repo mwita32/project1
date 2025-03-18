@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ece525-37cf-44da-8c77-5df8b976a444" name="Changes" comment="updated the code still under development">
-      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/css/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/css/family.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myproject/myapp/static/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/homepage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myproject/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/static/image/recover.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/static/image/reset.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/email_sent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/invalid_token.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/password_reset.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myproject/myapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myproject/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +144,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741963477243</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated the code still under development">
+      <option name="closed" value="true" />
+      <created>1742023456357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742023456357</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated the code still under development">
+      <option name="closed" value="true" />
+      <created>1742023497383</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742023497383</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

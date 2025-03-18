@@ -6,7 +6,7 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.contrib.auth.tokens import default_token_generator
-from django.utils.http import urlsafe_base64_decode
+from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.contrib import messages
 from .models import CustomUser
 from .forms import RegisterForm, LoginForm, PasswordResetForm, SetNewPasswordForm
@@ -15,33 +15,41 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def home_view(request):
-    return redirect('login')  # Redirect to login page
+def homepage(request):
+    return render(request, 'homepage.html')
+
 
 def register_view(request):
     if request.method == "POST":
         form = RegisterForm(request.POST)
         if form.is_valid():
             email = form.cleaned_data.get("email")
-            print(f"Debug: Retrieved email -> {email}")
 
             user = form.save(commit=False)
             user.is_active = False  # Disable account until email verification
             user.save()
 
+            # Generate verification link
             token = generate_token(user)
             uid = encode_uid(user.pk)
             site = get_current_site(request).domain
-            link = f"http://{site}/verify-email/{uid}/{token}/"
+            verification_link = f"http://{site}/verify-email/{uid}/{token}/"
 
+            # Debugging log
+            logger.info(f"Verification link for {email}: {verification_link}")
+
+            # Send verification email
             subject = "Verify Your Email"
-            message = render_to_string("email_verification.html", {"link": link})
+            message = render_to_string("email_verification.html", {"link": verification_link})
 
-            email_message = EmailMultiAlternatives(subject, message, settings.EMAIL_HOST_USER, [email])
-            email_message.attach_alternative(message, "text/html")
-            email_message.send()
+            if settings.EMAIL_HOST_USER:
+                email_message = EmailMultiAlternatives(subject, "", settings.EMAIL_HOST_USER, [email])
+                email_message.attach_alternative(message, "text/html")
+                email_message.send()
+                messages.success(request, "A verification email has been sent to your email.")
+            else:
+                messages.error(request, "Email sending failed. Please contact support.")
 
-            messages.success(request, "A verification email has been sent to your email.")
             return redirect("login")
         else:
             messages.error(request, "Registration failed. Please check your details.")
@@ -49,6 +57,7 @@ def register_view(request):
         form = RegisterForm()
 
     return render(request, "register.html", {"form": form})
+
 
 def verify_email(request, uid, token):
     try:
@@ -67,6 +76,7 @@ def verify_email(request, uid, token):
 
     return redirect("login")
 
+
 def login_view(request):
     if request.method == "POST":
         form = LoginForm(request, data=request.POST)
@@ -81,6 +91,7 @@ def login_view(request):
         form = LoginForm()
 
     return render(request, "login.html", {"form": form})
+
 
 def admin_login_view(request):
     if request.method == "POST":
@@ -98,10 +109,12 @@ def admin_login_view(request):
 
     return render(request, "admin_login.html", {"form": form})
 
+
 def logout_view(request):
     logout(request)
     messages.success(request, "You have successfully logged out.")
     return redirect("login")
+
 
 def forgot_password_view(request):
     if request.method == "POST":
@@ -120,11 +133,14 @@ def forgot_password_view(request):
                 subject = "Password Reset Request"
                 message = render_to_string("password_reset.html", {"link": reset_link})
 
-                email_message = EmailMultiAlternatives(subject, message, settings.EMAIL_HOST_USER, [email])
-                email_message.attach_alternative(message, "text/html")
-                email_message.send()
+                if settings.EMAIL_HOST_USER:
+                    email_message = EmailMultiAlternatives(subject, "", settings.EMAIL_HOST_USER, [email])
+                    email_message.attach_alternative(message, "text/html")
+                    email_message.send()
+                    messages.success(request, "A password reset link has been sent to your email.")
+                else:
+                    messages.error(request, "Email sending failed. Please contact support.")
 
-                messages.success(request, "A password reset link has been sent to your email.")
                 return redirect("login")
             except CustomUser.DoesNotExist:
                 messages.error(request, "No account found with that email.")
@@ -132,6 +148,7 @@ def forgot_password_view(request):
         form = PasswordResetForm()
 
     return render(request, "forgot_password.html", {"form": form})
+
 
 def reset_password_view(request, uid, token):
     try:
@@ -155,9 +172,11 @@ def reset_password_view(request, uid, token):
 
     return redirect("forgot_password")
 
+
 @login_required
 def dashboard_view(request):
     return render(request, "dashboard.html")
+
 
 @login_required
 def homepage_view(request):
