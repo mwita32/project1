@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d5ece525-37cf-44da-8c77-5df8b976a444" name="Changes" comment="updated the code still under development">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742295453506</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated the code still under development">
+      <option name="closed" value="true" />
+      <created>1742297002610</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742297002610</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated the code still under development">
+      <option name="closed" value="true" />
+      <created>1742297010486</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742297010486</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
+    {% load static%}
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/application.css">
     <link rel="stylesheet" href="/static/css/family.css">
@@ -13,7 +14,7 @@
     <!-- Top Navigation Bar -->
     <div class="top-nav">
         <div class="left-section">
-            <img src="/static/images/mmustlogo.jpg" class="logo">
+            <img src="/static/image/mmustlogo.png" class="logo">
             <h2>MASINDE MULIRO UNIVERSITY RATTANSI PORTAL</h2>
         </div>
         <div class="right-section">
@@ -25,8 +26,8 @@
     <div class="sidebar" id="sidebar">
         <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <ul>
-            <li><a href="{% url 'dashboard' %}"><i class="icon"></i> <span>Dashboard</span></a></li>
-            <li><a href="{% url 'application' %}"><i class="icon"></i> <span>Application</span></a></li>
+            <li><a href=" "><i class="icon"></i> <span>Dashboard</span></a></li>
+            <li><a href=" "><i class="icon"></i> <span>Application</span></a></li>
             <li><a href="#"><i class="icon"></i> <span>Notifications</span></a></li>
             <li><a href="#"><i class="icon"></i> <span>Help Desk</span></a></li>
             <li><a href="#"><i class="icon"></i> <span>Contact Us</span></a></li>
