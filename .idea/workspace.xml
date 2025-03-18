@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ece525-37cf-44da-8c77-5df8b976a444" name="Changes" comment="updated the code still under development">
-      <change afterPath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/email_verification.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +30,12 @@
     &quot;assignee&quot;: &quot;mwita32&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mwita32/project1.git&quot;,
-    &quot;accountId&quot;: &quot;973bb5ed-792d-4fe6-967d-ec6951ce3c87&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mwita32/project1.git",
+    "accountId": "03202f7d-598f-4368-83cc-9cf157b82d1b"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -160,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742023497383</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated the code still under development">
+      <option name="closed" value="true" />
+      <created>1742295443858</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742295443859</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated the code still under development">
+      <option name="closed" value="true" />
+      <created>1742295453506</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742295453506</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
